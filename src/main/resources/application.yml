@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/srinu1657/config-repo
+
+# Optional if public repo
+# spring.cloud.config.server.git.username=your-username
+# spring.cloud.config.server.git.password=your-personal-access-token
+
+server:
+  port: 8080
